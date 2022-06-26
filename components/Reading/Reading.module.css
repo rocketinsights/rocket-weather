@@ -1,0 +1,14 @@
+.reading {
+  padding: 1rem;
+  width: 25%;
+}
+
+.heading {
+  margin: 0 0 .5rem;
+  font-weight: normal;
+}
+
+.value {
+  font-size: 5vw;
+  margin: 0;
+}

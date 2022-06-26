@@ -1,0 +1,57 @@
+.face {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #999;
+  position: relative;
+}
+.arrow {
+  border-radius: 2px;
+  height: 30%;
+  width: 2px;
+  background: #999;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: bottom center;
+  transition: transform 2s ease;
+}
+.arrow:before{
+  content: '';
+  border-radius: 2px;
+  position:absolute;
+  top: -5px;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 10px 8px;
+  border-color: transparent transparent #999 transparent;
+  transform: translateX(calc(-50% + 1px));
+}
+
+.dir {
+  color: #000;
+  font-size: 1.2rem;
+  position: absolute;
+}
+.n {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.e {
+  top: 50%;
+  left: 100%;
+  transform: translate(-175%, -50%);
+}
+.s {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.w {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+}
