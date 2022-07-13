@@ -4,7 +4,7 @@ export default function Wind({ windData }) {
   const { wind_dir_last, wind_speed_last } = windData;
 
   const getWindDirection = (deg) => {
-    if (deg > 348.75 && deg < 11.25) return 'N';
+    if (deg > 348.75 && deg < 11.25 || deg === 360) return 'N';
     else if (deg > 11.25 && deg < 33.75) return 'NNE';
     else if (deg > 33.75 && deg < 56.25) return 'NE';
     else if (deg > 56.25 && deg < 78.75) return 'ENE';
