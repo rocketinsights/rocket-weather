@@ -1,6 +1,6 @@
 .reading {
   padding: 1rem;
-  /* width: 25%; */
+  flex: 50%;
 }
 
 .heading {
