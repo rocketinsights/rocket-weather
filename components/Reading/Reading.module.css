@@ -1,14 +1,16 @@
 .reading {
   padding: 1rem;
-  width: 25%;
+  /* width: 25%; */
 }
 
 .heading {
+  color: #eaeaea;
   margin: 0 0 .5rem;
   font-weight: normal;
+  font-size: 2.5rem;
 }
 
 .value {
-  font-size: 5vw;
+  font-size: 8rem;
   margin: 0;
 }

@@ -25,7 +25,7 @@ export default function Wind({ windData }) {
 
   return (
     <div>
-      <h2 className="block text-4xl mb-4">
+      <h2>
         {Math.round(wind_speed_last)}<small>mph </small>
         {getWindDirection(wind_dir_last)}
       </h2>
@@ -39,7 +39,7 @@ export default function Wind({ windData }) {
           transform: `translateX(-50%) translateY(-100%) rotate(${wind_dir_last}deg)`
         }}></div>
       </div>
-      <h2 className="block text-4xl">{/*getWindDirection()*/}</h2>
+      <h2>{/*getWindDirection()*/}</h2>
     </div>
   )
 }
